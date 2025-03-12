@@ -23,3 +23,19 @@ tmp/
 *.launch
 .metadata/
 .recommenders/
+
+# gRPC / Protocol Buffers
+*.pb.go
+*.pb.cc
+*.pb.h
+*.pb.cpp
+*.pb.swift
+*.pb.rb
+*.pb.py
+*.pb.ts
+*.pb.dart
+*.pb.cs
+*.pb.m
+*.pb.java
+*.pb.json
+*.proto~
