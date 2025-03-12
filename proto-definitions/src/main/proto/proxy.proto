@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package proxy;
+
+option java_multiple_files = true;
+option java_package = "com.example.proxy";
+
+service ProxyService {
+  rpc PlaceOrder (PartnerOrderRequest) returns (PartnerOrderResponse);
+}
+
+message PartnerOrderRequest {
+  int32 denomination = 1;
+  int32 quantity = 2;
+}
+
+message PartnerOrderResponse {
+  string partner_order_id = 1;
+  string status = 2;
+}
